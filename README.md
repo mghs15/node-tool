@@ -1,9 +1,9 @@
 # node-tool
-Node.jsで作ったちょっとしたツールたち
+Mini tools on Node.js.
 
-## CSV内のタイルパスを経緯度に変更して、GeoJSONとして出力する
-`csv2geojson`
+## csv2geojson.js
+Convert xyz tile path (e.g. {z}/{x}/{y}.ext) in a csv file to lnglat as a GeoJSON file. 
 
-使い方
-`node csv2geojson ./your/file.path`
+usage
+```node csv2geojson ./your/file.path```
 
