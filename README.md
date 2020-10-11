@@ -12,4 +12,23 @@ merge same tiles as below (all properties excluding xyz tile path have to be num
 
 ```node csv2geojson_merge.js ./your/filepath_to.csv```
 
+### 参考文献
+
+* https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames
+
+
+## simple_mk_parser
+
+くわしくはこちら
+
+https://github.com/mghs15/node-tool/blob/master/tools/simple_mk_parser/index.md
+
+
+## chiikimesh
+
+地域メッシュ（第２次地域区画）に関するツール。
+
+### 参考文献
+
+* https://www.stat.go.jp/data/mesh/pdf/gaiyo1.pdf
 
