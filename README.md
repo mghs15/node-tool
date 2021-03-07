@@ -32,3 +32,7 @@ https://github.com/mghs15/node-tool/blob/master/tools/simple_mk_parser/index.md
 
 * https://www.stat.go.jp/data/mesh/pdf/gaiyo1.pdf
 
+## styleAnalysis
+
+Mapbox Styleの構造をチェックするツール
+
