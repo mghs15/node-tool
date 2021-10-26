@@ -15,7 +15,7 @@ const mesh2bbox = (mesh) => {
     const maxlat = (+X / 1.5) + ( (+x + 1) * (5/60) );
     const minlat = (+X / 1.5) + (  +x      * (5/60) );
     
-    const bbox = [maxlon, maxlat, minlon, minlat];
+    const bbox = [minlon, minlat, maxlon, maxlat];
     
     return bbox;    
     
@@ -34,7 +34,7 @@ const mesh2bbox = (mesh) => {
     const maxlat = (+X / 1.5) + (  +x * (5/60) )   + ( (+xx + 1) * (0.5/60));
     const minlat = (+X / 1.5) + (  +x * (5/60) )   + (  +xx      * (0.5/60));
     
-    const bbox = [maxlon, maxlat, minlon, minlat];
+    const bbox = [minlon, minlat, maxlon, maxlat];
     
     return bbox;
     
@@ -53,11 +53,11 @@ const bbox2poly = (bbox, prop = {}) => {
       "geometry": {
         "type": "Polygon",
         "coordinates": [
-          [bbox[2], bbox[1]],
           [bbox[0], bbox[1]],
           [bbox[0], bbox[3]],
           [bbox[2], bbox[3]],
-          [bbox[2], bbox[1]]
+          [bbox[2], bbox[1]],
+          [bbox[0], bbox[1]]
         ]
       }
   };
@@ -74,4 +74,4 @@ const bbox = mesh2bbox(mesh);
 
 const poly = bbox2poly(bbox, {"mesh": mesh});
 
-console.log(poly);
+console.log(poly.geometry.coordinates);
