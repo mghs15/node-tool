@@ -36,3 +36,9 @@ https://github.com/mghs15/node-tool/blob/master/tools/simple_mk_parser/index.md
 
 Mapbox Styleの構造をチェックするツール
 
+## stream (メモ段階)
+
+モジュール`readline`を用いた、ファイルの読み書きに関連するコードのメモ
+
+
+
