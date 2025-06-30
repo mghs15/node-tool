@@ -40,5 +40,8 @@ Mapbox Styleの構造をチェックするツール
 
 モジュール`readline`を用いた、ファイルの読み書きに関連するコードのメモ
 
+## turf-buffering
+
+Turf.js を用いて地物にバッファを付けるツール
 
 
